@@ -13,7 +13,7 @@ class Main {
     int caseNumber = 0;
 
     while(fileScanner.hasNext()){
-        arrayList.add(fileScanner.next());
+        arrayList.add(fileScanner.nextLine());
       }
 
     while(caseNumber != 5){
@@ -30,7 +30,8 @@ class Main {
         break;
         case 3: System.out.println("Top 10 Forbes In-Demand Jobs!");
         break;
-        case 4: for (int i = 0; i < arrayList.size(); i++){
+        case 4: System.out.println("Current Students:");
+          for (int i = 0; i < arrayList.size(); i++){
           System.out.println(arrayList.get(i));
         }
         break;
